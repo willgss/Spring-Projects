@@ -1,0 +1,27 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: config-server
+
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+#        native:
+#          #            searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
+#          #                             file://<chapter 3>confsvr/src/main/resources/config/organizationservice
+#          searchLocations: classpath:config/,classpath:config/licensingservice,classpath:config/organizationservice
+#        encrypt:
+#          enabled: false
+#
+#          spring:
+
+# for git
+        git:
+          uri: https://github.com/willgss/ConfigServerConfigurations
+#          searchPaths: licensingservice,organizationservice
+          username:
+          password:
+
